@@ -1,0 +1,219 @@
+.col-half {
+  width: 50%;
+}
+
+.clear {
+  clear: both;
+}
+/* ============================================ */
+
+#header {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(221, 218, 219);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+#logo {
+  margin: 10px 0;
+}
+
+#logo img {
+  max-width: 136px;
+  height: auto;
+  margin: -9px 50px;
+  padding: 7px 0;
+}
+
+#main-menu {
+  display: flex;
+  list-style: none;
+}
+
+#main-menu a {
+  margin: -16px 0;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 18px 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+#main-menu a::after {
+  content: "";
+  height: 3px;
+  width: 0px;
+  background-color: tomato;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#main-menu a:hover::after {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+#main-menu li:hover a {
+  color: red;
+}
+
+#Sign-In {
+  margin-right: -239px;
+}
+
+#Sign-In a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  line-height: 60px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+#Sign-In:hover a {
+  color: red;
+}
+
+#Sign-Up {
+  padding: 17px 42px;
+  border: 1px solid red;
+  border-radius: 59px;
+  margin: 1px 50px;
+  min-width: 147px;
+}
+
+#Sign-Up a {
+  text-decoration: none;
+  color: red;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+#Sign-Up:hover a {
+  color: black;
+}
+/* ==========Strar LaslesVPN============= */
+#LaslesVPN {
+  margin-top: 53px;
+}
+
+.lasles-txt {
+  margin: 73px 50px;
+  display: inline-block;
+}
+
+.txt-lasles-1 {
+  font-size: 40px;
+}
+
+.txt-lasles-2 {
+  font-size: 18px;
+}
+
+.txt-laslesVPN-1 {
+  font-weight: bold;
+}
+
+.lasles-img {
+  margin: 73px 50px;
+  width: 507px;
+}
+
+#about-laslesVPN {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  width: 1157px;
+  height: 383px;
+  margin: auto;
+}
+/* ==========End LaslesVPN=================== */
+/* ==========Strar Features=============== */
+
+#Features {
+  margin-top: 70px;
+  background-color: #fdf9f9;
+  overflow: hidden;
+}
+
+#about-features {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  width: 1157px;
+  height: 383px;
+  margin: auto;
+}
+
+.features-txt {
+  margin: 73px 50px;
+  display: inline-block;
+}
+
+.txt-features-1 {
+  font-size: 40px;
+}
+.txt-features-2 {
+  font-size: 18px;
+}
+.features-img {
+  margin: 73px 50px;
+  width: 507px;
+}
+
+/* ==========End Features=============== */
+
+#information {
+}
+
+.about-information {
+  width: 800px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  margin: auto;
+}
+
+.users,
+.locations {
+  border-right: 1px outset #f5f5f5;
+  display: flex;
+  padding-right: 86px;
+}
+
+.severs {
+  display: flex;
+  padding-right: 86px;
+}
+
+.users-90 {
+  margin: -29px 16px;
+}
+
+.locations-30 {
+  margin: -29px 16px;
+}
+
+.servers-50 {
+  margin: -29px 16px;
+}
+
+#Choose {
+}
