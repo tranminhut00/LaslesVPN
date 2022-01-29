@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Lasless</title>
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.js">
     <link rel="stylesheet" href="reset.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -32,7 +33,9 @@
         </div>
        <div id="Sign-Up">
          
-           <a href="">Sign Up</a>
+           <!-- <a href="">Sign Up</a> -->
+
+           <input class="Sign-Up js-Sign-up " type="button" value="Sign-Up">
          
        </div>
     </div>
@@ -58,7 +61,7 @@
            
             <img src="/img/user.png" alt="">
             <div class="users-90">
-                <br>90+</br> Users</p>
+                <p><br class="bol">90+</br> Users</p>
             </div>
 
         </div>
@@ -67,7 +70,7 @@
             <!-- <ion-icon name="location-outline"></ion-icon> -->
             <img src="/img/location.png" alt="">
             <div class="locations-30">
-                <p><br class="bol">30+</br>Locations</p>
+                <p><br>30+</br>Locations</p>
             </div>
         </div>
 
@@ -76,7 +79,7 @@
            <img src="/img/Server.png" alt="">
             <div class="servers-50">
                 <!-- <p >50+</p>Servers</p> -->
-                <p><br class="bol">50+</br>Servers</p>
+                <p><br >50+</br>Servers</p>
             </div>
             
         </div>
@@ -87,26 +90,225 @@
 
         <div id="about-features">
 
-            <div class="features-txt ">
-                <p class="txt-features-1 ">We Provide Many Features You Can Use</p>    
-    
-                <p class="txt-features-2" >You can explore the features that we provide with fun and have their own functions each feature.</p>
-            </div>
             <div class="features-img ">
                 <img src="img/lastless2.png" alt="">
             </div>
 
+            <div class="features-txt ">
+                <p class="txt-features-1 ">We Provide Many Features You Can Use</p>    
+    
+                <p class="txt-features-2" >You can explore the features that we provide with fun and have their own functions each feature.</p>
+
+                <div class="features-check">
+                    <p>
+                        <ion-icon class="Green" name="checkmark-outline"></ion-icon>
+                        Powerfull online protection.
+                    </p>
+    
+                    <p>
+                        <ion-icon class="Green" name="checkmark-outline"></ion-icon>
+                        Powerfull online protection.
+                    </p>
+    
+                    <p>
+                        <ion-icon class="Green" name="checkmark-outline"></ion-icon>
+                        Powerfull online protection.
+                    </p>
+                </div>
+        
+            </div>
+       
+           
+
         </div>
-    <div class="clear"></div>
+   
 </div>
 
 </div>
 </div>
 
 <div id="Choose">
+    <div id="About-choose">
+        <div class="choose-txt">
+            <div class="choose-txt-hearder">Choose Your Plan</div>
+            <div class="choose-txt-sub">Let's choose the package that is best for you and explore it happily and cheerfully.</div>
+        </div>
 
+        <div class="choose-col">
+<div class="choose-plan">
+    <div class="choose-about-header">
+    <img src="/img/Standard.png" alt="Standard">
+    <h3 >Free Plan</h3>
+    </div>
+    <div class="choose-about-txt">
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Unlimited Bandwitch
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Encrypted Connection
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        No Traffic Logs
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Works on All Devices
+    </p>
+ <div class="choose-about-bootom">
+    <h3>Free Plan</h3>
+    <input class="btn-select" type="button" value="Select">
+</div>
+</div>
+</div>
+
+
+<div class="choose-plan">
+    <div class="choose-about-header">
+    <img src="/img/Standard.png" alt="Standard">
+    <h3>Standard Plan</h3>
+    </div>
+ <div class="choose-about-txt">
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Unlimited Bandwitch
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Encrypted Connection
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        No Traffic Logs
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Works on All Devices
+    </p>
+ <div class="choose-about-bootom">
+    <h3>$9 / <b class="opacity">mo</b></h3>
+    <input class="btn-select" type="button" value="Select">
+    </div>
+</div>
+</div>
+
+<div class="choose-plan">
+    <div class="choose-about-header">
+    <img src="/img/Standard.png" alt="Standard">
+    <h3>Premium Plan</h3>
+</div>
+    <div class="choose-about-txt">
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Unlimited Bandwitch
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Encrypted Connection
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        No Traffic Logs
+    </p>
+
+    <p>
+        <ion-icon class="txt-color" name="checkmark-outline"></ion-icon>
+        Works on All Devices
+    </p>
+ <div class="choose-about-bootom">
+
+    <h3>$12 / <b class="opacity">mo</b></h3>
+    <input class="btn-select-red" type="button" value="Select">
+    </div>
+</div>
+</div>
+
+        </div>
+    </div>
 </div>
 
   </div>
+
+  <!-- =====================Modal-Sign-Up======================= -->
+  <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+         
+          <div class="modal-header">
+            <p>With Your Social Network</p>
+          </div>
+
+          <div class="modal-network">
+              <div class="modal-ms ">
+                  <ion-icon name="logo-windows"></ion-icon>
+                    <a class="txt-dcs" href="">Microsoft</a>
+              </div>
+
+              <div class="modal-fb ">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <a class="txt-dcs" href="">Facebook</a>
+              </div>
+
+              <div class="modal-gg ">
+                <ion-icon name="aperture-outline"></ion-icon>
+                <a class="txt-dcs" href="">Google</a>
+              </div>
+          </div>
+          <p class="modal-or">Or</p>
+
+          <div class="modal-body">
+              <input  type="text" name="" required placeholder="Name" id="User-name">
+              <input type="password" name=""  placeholder="PassWord" id="User-password">
+
+              <input class="modal-btn-Sign-Up" type="button" value="Đăng Nhập">
+              <div class="modal-close js-modal-close">
+                <ion-icon class="modal-icon-close" name="close-outline"></ion-icon>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ============End Modal=================== -->
+
+  <!-- ==============Js-Sign-Up==================== -->
+  <script>
+    const Signup = document.querySelector('.js-Sign-up')
+    const modal = document.querySelector('.js-modal')
+    const modalClose = document.querySelector('.js-modal-close')
+    const modalContainer =document.querySelector('.js-modal-container')
+    
+    function showSignUp () {
+        modal.classList.add('open')
+    }
+    
+    function hideSignUp () {
+      modal.classList.remove('open')
+    }
+    
+    function test () {
+        event.stopImmediatePropagation()
+    }
+    
+    
+    Signup.addEventListener('click' , showSignUp)
+    
+    
+    modalClose.addEventListener('click' , hideSignUp)
+    
+    modal.addEventListener('click' , hideSignUp)
+    
+    modalContainer.addEventListener('click' , test)
+    
+    
+    </script>
+    
 </body>
 </html>

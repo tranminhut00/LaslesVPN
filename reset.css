@@ -42,10 +42,60 @@ picture {
   }
 }
 
-.bol {
-  font-weight: bold;
-}
 
 /* .clear {
   clear: both;
 } */
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.Green {
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+}
+
+.bol {
+ font-weight: bold;
+}
+
+.mrl {
+  margin-left: -37px;
+}
+
+.txt-color {
+  margin-right: 16px;
+  color: green;
+}
+
+.opacity {
+  opacity: 0.3;
+  /* display: block; */
+}
+
+.mr {
+  margin: 20px 30px;
+}
+
+.txt-dcs {
+  text-decoration: none;
+}
+
+.open {
+  display: flex;
+}
+
+@keyframes modeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-140px);
+  }
+
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+}
