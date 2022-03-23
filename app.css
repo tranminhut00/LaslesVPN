@@ -245,7 +245,7 @@
 .choose-txt-sub {
   text-align: center;
   width: 460px;
-  margin: 0 auto;
+  margin: 30px auto;
   opacity: 0.5;
 }
 .choose-col {
@@ -318,6 +318,24 @@
   color: aquamarine;
 }
 
+/* ===========Huge============== */
+
+.about-img-huge {
+  margin-top: 80px ;
+}
+
+.img-huge {
+ margin: 0 auto;  
+}
+
+#about-allapp {
+  margin-top: -67px;
+}
+
+.img-allapp{
+  margin: 0 auto;
+  height: 120px;
+}
 
 /* ==========Modal============ */
 
@@ -463,6 +481,237 @@
 .modal-icon-close {
   font-size: 30px;
 }
+
+#evaluate {
+word-break: break-word;;
+}
+
+.evaluate-img{
+  display: flex;
+  margin: 12px 130px;
+}
+
+.evalute-avt {
+  width: 60px;
+  border-radius: 100%;
+  
+}
+
+.evalute-name{
+ 
+}
+
+.evalute-about-header {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.evalute-name-h3{
+  margin: 0 13px;
+}
+
+.about-star-p {
+  display: flex;
+}
+.star{
+  margin: 6px 4px;
+  color: orange;
+  display: inline-block;
+  
+}
+
+.evaluate-1, .evaluate-2, .evaluate-3{
+  padding: 42px 29px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin: 0 26px;
+  width: calc(100%/3);
+
+}
+
+/* .evaluate-2{
+  padding: 42px 29px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin: 0 26px;
+  width: calc(100%/3);
+}
+.evaluate-3{
+  padding: 42px 29px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin: 0 26px;
+  width: calc(100%/3);
+
+} */
+
+.evalute-name-h5 {
+  margin: 0 12px;
+  opacity: 0.6;
+  display: block;
+}
+
+.evalute-txt-p {
+  margin: 3px 0;
+}
+
+.about-evaluate-bt{
+
+}
+.evaluate-bt1{
+
+}
+
+.evaluate-bt2{
+  float: right;
+  margin: 6px 145px;
+}
+.evl-bt2-left{
+  color: red;
+  font-size: 60px;
+}
+.evl-bt2-right{
+  color: red;
+  font-size: 60px;
+
+}
+
+#Subscribe {
+  width: 1157px;
+  display: block;
+  align-items: center;
+  margin: 77px auto;
+  
+}
+
+.Subscribe-txt{
+  width: 30%;
+}
+.Subscribe-now{
+  float: right;
+}
+
+.Subscribe-h2{
+
+}
+.Subscribe-h4{
+  opacity: 0.5;
+  margin: 6px 0;
+}
+.btn-Subcribe {
+    border-radius: 39px;
+    color: white;
+    background-color: red;
+    font-size: 23px;
+    padding: 5px 26px;
+    border: none;
+    box-shadow: 2px 14px 15px 1px #fccdcd;
+}
+
+
+/* ===============Lasles-bt================= */
+#lasles-bt {
+  display: flex;
+  justify-content: space-around;
+  margin: 12px 130px;
+}
+
+.laslesVPN-col{
+
+}
+.lasles-bt-txt{
+  margin: 10px 0;
+}
+.lasles-bt-mxh{
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.lasles-bt-mxh > a {
+  color: red;
+  text-decoration: none;
+}
+
+.lasles-mxh-ins{
+
+}
+
+.lasles-mxh-fb{
+
+}
+
+.lasles-mxh-linkedin{
+
+}
+
+.lasles-bt-bt{
+  opacity: 0.6;
+}
+
+.lasles-col-1{
+  line-height: 2.1;
+}
+
+.about-lasles-col-1-txt{
+  list-style: none;
+
+}
+
+.lasles-col-1-txt-header{
+font-weight: bold;
+}
+
+.lasles-col-1-txt{
+
+}
+
+.lasles-col-2{
+  line-height: 2.1;
+
+}
+
+.about-lasles-col-2-txt{
+  list-style: none; 
+  
+}
+.lasles-col-3{
+  line-height: 2.1;
+
+}
+
+.about-lasles-col-3-txt{
+  list-style: none;
+
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+ #Sign-In {
+   
+ }
+
+ #Sign-Up {
+   
+ }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  #about-laslesVPN {
+    flex-direction: column-reverse;
+    display: block;
+  }
+
+  .lasles-img {
+    display: block;
+  }
+
+  .information {
+    margin: 1110px 0;
+  }
+}
+
+
 
 
 
