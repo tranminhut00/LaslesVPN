@@ -1,3 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
 .col-half {
   width: 50%;
 }
@@ -41,7 +70,7 @@
 }
 
 #main-menu a {
-  margin: -16px 0;
+  margin: -1px 0;
   text-decoration: none;
   color: black;
   display: block;
@@ -268,7 +297,7 @@
   /* display: inline-block;
   margin: 61px 71px;
   border: 2px solid #808080; */
-  margin-top: 12px;
+    margin-top: 12px;
     padding: 93px;
     display: inline-block;
     margin: 61px 71px;
@@ -361,8 +390,6 @@
   animation: modalFadeIn ease-in-out 0.5s;
   padding: 34px 48px;
   border-radius: 40px;
-  animation: modeFadeIn  ease-in-out 0.3s;
-  
 }
 
 
@@ -373,6 +400,7 @@
   line-height: 50px;
   border-radius: 30px;
 }
+
 .modal-network{
   display: flex;
   margin-top: 32px;
@@ -476,6 +504,10 @@
   cursor: pointer;
   background-color: orchid;
   color: white;
+}
+
+.open {
+  display: flex;
 }
 
 .modal-icon-close {
@@ -684,36 +716,433 @@ font-weight: bold;
 
 }
 
-/* Mobile: width < 740px */
-@media only screen and (max-width: 46.1875em) {
- #Sign-In {
-   
- }
+        /* Mobile App */
+.nav_bars-btn {
+  color: rgb(7, 1, 1);
+  width: 40px;
+  height: 40px;
+   display: none;
 
- #Sign-Up {
-   
- }
 }
 
-/* Tablet: width >= 740px and width < 1024px */
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-  #about-laslesVPN {
-    flex-direction: column-reverse;
+/* =====Map===== */
+
+#Global-NetWork {
+  text-align: center;
+
+}
+
+.Global-h1{
+  margin-bottom: 10px;
+
+}
+.Global-txt{
+  margin-bottom: 50px;
+}
+.Global-img{
+
+  margin: auto;
+}
+
+/* Thousands */
+#about-thousands {
+  min-height: 500px;  
+  overflow: hidden;
+  margin-bottom: -150px;
+
+}
+
+.header-thousand {
+  margin: 9px 15px;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+
+.header-thousand p {
+  opacity: 0.5;
+  margin: 6px 12px;
+  font-size: 12px;
+}
+
+.about-img-thousands {
+  display: flex;
+  justify-content: center;
+}
+
+.img-thousand-avt {
+    width: 350px;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+    background-color: #fafafa;
+    margin: 0px 31px;
+    padding: 66px 20px;
+    display: flex;
+    position: relative;
+  }
+
+.img-thousand {
+  max-width: 50px;
+  border-radius: 40px;
+}
+
+.thousand-name {
+  font-weight: bold;
+}
+
+.thousand-name-fake {
+ font-size: 10px;
+}
+
+/* Mobile nav */
+.nav_bars-btn {
+  width: 60px;
+  height: 60px;
+  display: none;
+  font-size: 40px;
+}
+
+.body-thousand{
+}
+
+.txt-thousand {
+opacity: 0.5;
+}
+
+.nav-overlay{
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(to bottom, #cee6ee 0%, #f6d0e3 100%);
+display: none;
+animation: FadeIn linear 0.2s;
+}
+.nav-mobile {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+background-color: white;
+width: 320px;
+max-width: 100%;
+transform: translateX(-100%);
+transition: transform linear 0.2s, opacity linear 0.2s ;
+}
+
+#nav-mobile-list {
+margin-top: 24px;
+}
+
+.nav_mobile-link {
+ text-decoration: none;
+ color: black;
+ display: block;
+ padding: 10px 0;
+ font-size: 20px;
+}
+
+.nav-mobile-close {
+  position: absolute;
+  color: #666;
+  font-size: 45px;
+  right: 0;
+  cursor: pointer;
+}
+
+.nav__input {
+  display: none;
+}
+
+.about-img-thousand{
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px; */
+  padding: 50px;
+  align-items: center;
+}
+.img-thousand-1 img{
+  border-radius: 25px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+  list-style: none;
+}
+
+.slick-dots  button {
+  width: 25px;
+  height: 25px;
+  border-radius: 100em;
+  background: rgb(235, 71, 82);
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  background-color: #3e36d7;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+
+.footer-col a {
+  color: rgba(0,0,0,0.75);
+}
+
+.content {
+  height: 80vh;
+  background: #ccc;
+}
+
+
+
+.slick-arrow {
+position: absolute;
+bottom: 0%;
+transform: translateY(-50%);
+border: none;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+line-height: 1;
+right: 63%;
+margin: -39px 230px;
+border: 2px red solid;
+border-radius: 30px;
+background: pink;
+}
+
+.slick-arrow:hover {
+  cursor: pointer;
+  color: red;
+  background-color: pink;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 12px;
+}
+
+.image-img {
+  height: 600px;
+
+}
+
+.txt-thousand-title {
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.5;
+  color: #c23333;
+}
+
+.nav-mobile-list-outline:hover, .nav-mobile-close:hover {
+  cursor: pointer;
+  color: rgb(35, 167, 138);
+}
+
+.nav__input:checked ~ .nav-overlay {
+  display: block;
+}
+
+.nav__input:checked ~ .nav-mobile {
+  transform: translateX(0%);
+}
+
+.About-Subscribe{
+  display: flex;
+  height: 320px;
+  margin: 45px 58px;
+  background-image: linear-gradient(rgb(245, 241, 241), rgb(255, 255, 255));
+  border-radius: 30px;
+  padding: 20px 45px;
+}
+
+.btn-Subsrcibe:hover {
+  cursor: pointer;
+  color: #5095ff;
+  box-shadow: 2px 5px 20px 5px #3e9c62;
+}
+
+.Subscribe-cl1{
+  width: 50%;
+}
+
+.Subscribe-cl2{
+  width: 50%;
+
+}
+
+.txt-subscribe{
+  font-size: 32px;
+}
+.txt-sub{
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+.btn-Subsrcibe{
+  font-family: 'Alumni Sans Collegiate One', sans-serif;
+  min-width: 171px;
+  font-size: 20px;
+  padding: 13px 42px;
+  color: white;
+  background: red;
+  border-radius: 34px;
+  margin: 12px 279px;
+  box-shadow: 2px 5px 20px 5px #888888;
+}
+#bt-laslesVPN {
+  border-radius: 30px;
+  padding: 20px 45px;
+  margin: 45px 58px;
+  background-image: linear-gradient(rgb(245, 241, 241), rgb(255, 255, 255));
+}
+
+.about-cl-lasles{
+
+}
+.cl1-lasles{
+  max-width: 31%;
+ line-height: 31px;
+}
+
+.cl1-lasles img {
+  width: 100px;
+}
+
+.cl1-lasles p {
+  margin: 5px 0px;
+  font-size: 15px;
+  width: 200px;
+}
+
+.txt-opacity {
+  opacity: 0.3;
+}
+
+.about-icon-mxh-lasles{
+  font-size: 24px;
+  display: flex;
+}
+
+.about-icon-mxh-lasles a {
+  color: rgb(233, 27, 27);
+  cursor: pointer;
+  display: flex;
+  margin: 0 12px;
+  padding: 0 6px;
+}
+
+.about-icon-mxh-lasles a:hover {
+  color: #3e9c62;
+}
+
+.footer-content-wrapper {
+  width: 80%;
+  margin: 1em auto;  
+}
+
+.footer-col {
+  display: inline-block;
+  padding: 0.5em 0.1em 0.5em 1em;
+  box-sizing: border-box;
+  
+}
+.footer-col:nth-child(4) {
+  border: none;
+}
+
+.ta-l {
+  text-align: left;
+}
+.flt {
+  float: left;
+}
+
+.flt:nth-child(even):after {
+   content: " "; 
+   visibility: hidden; 
+   display: block; 
+   height: 1em; 
+   clear: both;
+}
+
+.large-25 {
+  width: 25%;
+}
+
+.footer-col a {
+  display: block;
+  margin: 0.3em 0;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  .small-50 {
+    width: 50%;  
+  }
+  .footer-col:nth-child(2) {
+    border: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .tiny-100 {
+    width: 100%;
+  }
+  .footer-col { 
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 320px)  {
+
+}
+
+@media only screen and (max-width: 1023px) {
+  .nav_bars-btn {
     display: block;
   }
 
-  .lasles-img {
-    display: block;
-  }
-
-  .information {
-    margin: 1110px 0;
+  .nav {
+    display: none;
   }
 }
 
+@keyframes FadeIn {
+  from {
+      opacity: 0;
+  }
+   to {
+      opacity: 1;
+   }
+}
 
 
-
-
+ư
 
 
